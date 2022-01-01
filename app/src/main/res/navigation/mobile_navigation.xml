@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.projectmob.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_circle"
+        android:name="com.example.projectmob.ui.circle.nav_circle"
+        android:label="@string/menu_circle"
+        tools:layout="@layout/nav_circle_fragment" />
+
+    <fragment
+        android:id="@+id/nav_rectangle"
+        android:name="com.example.projectmob.ui.rectangle.nav_rectangle"
+        android:label="@string/menu_rectangle"
+        tools:layout="@layout/nav_rectangle" />
+    <fragment
+        android:id="@+id/nav_triangle"
+        android:name="com.example.projectmob.ui.triangle.nav_triangle"
+        android:label="@string/menu_triangle"
+        tools:layout="@layout/nav_triangle_fragment" />
+    <fragment
+        android:id="@+id/nav_ellipse"
+        android:name="com.example.projectmob.ui.ellipse.nav_ellipse"
+        android:label="@string/menu_ellipse"
+        tools:layout="@layout/nav_ellipse_fragment" />
+</navigation>
