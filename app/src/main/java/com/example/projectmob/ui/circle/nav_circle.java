@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -26,12 +27,15 @@ public class nav_circle extends Fragment {
 
         binding = NavCircleFragmentBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
-        final TextView textView = binding.textGallery;
-        navCircleViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final Button button = binding.button;
+        final TextView radius = binding.radiustxt;
+        final  TextView result = binding.result;
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
+            public void onClick(View v) {
+                final  String radiustr=  radius.getText().toString();
+                String hllo = radiustr;
+                result.setText(navCircleViewModel.calculate(radiustr));
             }
         });
         return root;
