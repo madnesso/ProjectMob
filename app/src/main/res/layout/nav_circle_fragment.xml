@@ -7,18 +7,18 @@
     tools:context=".ui.circle.nav_circle">
 
     <TextView
-        android:id="@+id/radius"
+        android:id="@+id/a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/radius"
-        app:layout_constraintBottom_toBottomOf="@+id/radiustxt"
-        app:layout_constraintEnd_toStartOf="@+id/radiustxt"
+        app:layout_constraintBottom_toBottomOf="@+id/atxt"
+        app:layout_constraintEnd_toStartOf="@+id/atxt"
         app:layout_constraintHorizontal_bias="0.271"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/radiustxt" />
+        app:layout_constraintTop_toTopOf="@+id/atxt" />
 
     <EditText
-        android:id="@+id/radiustxt"
+        android:id="@+id/atxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="116dp"
