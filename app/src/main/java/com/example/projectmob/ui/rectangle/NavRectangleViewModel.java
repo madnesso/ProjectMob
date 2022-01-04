@@ -6,14 +6,10 @@ import androidx.lifecycle.ViewModel;
 
 public class NavRectangleViewModel extends ViewModel {
 
-    private MutableLiveData<String> mText;
-
-    public NavRectangleViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is rectangle fragment");
-    }
-
-    public LiveData<String> getText() {
-        return mText;
+    public String calculate(String x,String y){
+        Double xd = Double.valueOf(x);
+        Double yd = Double.valueOf(y);
+        Double result = xd*yd;
+        return String.valueOf(result);
     }
 }
