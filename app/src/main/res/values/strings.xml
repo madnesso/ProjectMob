@@ -16,4 +16,5 @@
     <string name="menu_circle">Circle</string>
     <string name="radius">Radius</string>
     <string name="calculate">Calculate</string>
+    <string name="project_mobile">Project Mobile</string>
 </resources>
